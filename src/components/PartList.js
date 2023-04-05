@@ -9,7 +9,12 @@ function PartList({ total, path, set, selected }) {
         className={selected === i ? "selected click square" : "click square"}
         onClick={() => set(i)}
       >
-        <img src={`/character/${path}/${i + 1}.png`} alt="" height={60} />
+        <img
+          src={`/character/${path}/${i + 1}.png`}
+          alt=""
+          height={50}
+          width={50}
+        />
       </div>
     );
   }
